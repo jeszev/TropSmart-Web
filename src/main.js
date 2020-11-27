@@ -14,9 +14,30 @@ import VueGeolocation from "vue-browser-geolocation"
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+import firebase from "firebase/app";
+import "firebase/analytics";
+
+var firebaseConfig = {
+    apiKey: "AIzaSyDIuoDQEzQnSjw2rVTaKDku7CqnwMB9u_Y",
+    authDomain: "tropsmart-web.firebaseapp.com",
+    databaseURL: "https://tropsmart-web.firebaseio.com",
+    projectId: "tropsmart-web",
+    storageBucket: "tropsmart-web.appspot.com",
+    messagingSenderId: "444949515099",
+    appId: "1:444949515099:web:393397d43c864a868f287e",
+    measurementId: "G-9QXM46YP04"
+  };
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
 Vue.config.productionTip = true
+
+// alias
+Vue.prototype.$analytics = firebase.analytics();
 
 library.add(faSpinner)
 
