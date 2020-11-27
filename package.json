@@ -18,6 +18,7 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
     "core-js": "^3.6.5",
+    "firebase": "^8.1.1",
     "express": "^4.17.1",
     "flush-promises": "^1.0.2",
     "react-redux-loading-bar": "^5.0.0",
