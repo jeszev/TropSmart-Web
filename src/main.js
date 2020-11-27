@@ -19,15 +19,15 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import firebase from "firebase/app";
 import "firebase/analytics";
 
-var firebaseConfig = {
-    apiKey: "AIzaSyDIuoDQEzQnSjw2rVTaKDku7CqnwMB9u_Y",
-    authDomain: "tropsmart-web.firebaseapp.com",
-    databaseURL: "https://tropsmart-web.firebaseio.com",
-    projectId: "tropsmart-web",
-    storageBucket: "tropsmart-web.appspot.com",
-    messagingSenderId: "444949515099",
-    appId: "1:444949515099:web:393397d43c864a868f287e",
-    measurementId: "G-9QXM46YP04"
+  var firebaseConfig = {
+    apiKey: "AIzaSyCBtXSYeO0el3_Se-b0XY3fHdA4RFNE5Sg",
+    authDomain: "ts-web-55c65.firebaseapp.com",
+    databaseURL: "https://ts-web-55c65.firebaseio.com",
+    projectId: "ts-web-55c65",
+    storageBucket: "ts-web-55c65.appspot.com",
+    messagingSenderId: "591957246369",
+    appId: "1:591957246369:web:25e83db35c1eb7eca5cbe0",
+    measurementId: "G-4K97P89MD2"
   };
 
 // Initialize Firebase
