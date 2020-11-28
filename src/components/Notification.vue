@@ -68,6 +68,7 @@
 
 <script>
 import TsDataService from "@/services/TsDataService";
+import firebase from "firebase/app";
 export default {
   data: () => ({
     visible: false,
@@ -203,6 +204,7 @@ export default {
     cargoManager(data) {
       console.log("cargoManager : ", data);
       this.$analytics.logEvent("confirmed");
+      firebase.analytics().logEvent("page_notification");
       if (data.cargoStatus == "Awaiting") {
         console.log("setCargoCongirmation");
         TsDataService.setCargoConfirmation(data.id).then((response) => {
