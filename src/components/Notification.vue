@@ -197,7 +197,7 @@ export default {
       if (data == "Confirmados") this.retrieveConfirmedCargoesByDriver();
       if (data == "Terminados") this.retrieveFinishedCargoesByDriver();
     },
-    rowClick: function (item, row) {
+    rowClick: function(item, row) {
       row.select(true);
       this.currentCargo = row.item;
     },
@@ -225,6 +225,9 @@ export default {
         this.retrieveCargoes();
         console.log("setCargoReject response : ", response);
         this.$analytics.logEvent("declined");
+        firebase
+          .analytics()
+          .logEvent("page_notification", { name: "declined" });
       });
     },
     redirectManager(path) {
